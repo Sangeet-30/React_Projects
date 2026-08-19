@@ -1,0 +1,21 @@
+.calculator {
+  width: 20rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  margin: 3rem auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.calculator h1 {
+  text-align: center;
+  margin: 0 0 1rem;
+  font-size: clamp(1.75rem, 5vw, 2rem);
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    width: calc(100% - 1rem);
+    padding: 0.75rem;
+  }
+
+}

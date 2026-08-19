@@ -1,0 +1,81 @@
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.button {
+  width: 4rem;
+  height: 4rem;
+  justify-self: center;
+  border: none;
+  border-radius: 50%;
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.button:hover{
+  transform: translateY(-0.1rem);
+  opacity: 0.85;
+}
+
+.button:active {
+  transform: scale(0.95);
+  opacity: 1;
+}
+
+.button:not(.action):not(.operator):not(.equals) {
+  grid-column: span 2;
+}
+
+.operator {
+  grid-column: span 2;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-weight: 600;
+  background-color: #ffe5e5;
+  color: #e53935;
+}
+
+.action {
+  grid-column: span 3;
+  width: 5.5rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  background-color: #f0f0f0;
+  color: #e53935;
+}
+
+.equals {
+  grid-column: span 3;
+  width: 5.5rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  background-color: #e53935;
+  color: white;
+}
+
+
+
+@media (max-width: 400px) {
+  .button {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .action,
+  .equals {
+    width: 4.5rem;
+    height: 3.25rem;
+  }
+
+  .buttonContainer {
+    gap: 0.35rem;
+  }
+}
