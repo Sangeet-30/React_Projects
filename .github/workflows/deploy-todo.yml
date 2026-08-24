@@ -2,8 +2,6 @@ name: Deploy Todo App
 
 on:
   push:
-    branches:
-      - Sangeet-30
 
 permissions:
   contents: read
