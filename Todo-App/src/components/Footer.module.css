@@ -1,0 +1,20 @@
+.footer {
+  margin-top: 3rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+  color: #6c757d;
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .footer p {
+    max-width: 10.2rem;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,40 @@
+.todoRow {
+  margin: 0.7rem 0.4rem;
+  align-items: center;
+}
+
+.addTodo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.addTodo input {
+  min-height: 2.75rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  width: 100%;
+}
+
+
+.addTodo input[type="date"] {
+  flex: 1 1 6rem;
+  min-width: 0;
+}
+
+.addTodo button {
+  width: 3rem;
+  min-height: 2.75rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.addTodo button:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+}

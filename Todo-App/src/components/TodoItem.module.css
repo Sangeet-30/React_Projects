@@ -1,0 +1,84 @@
+.todoRow {
+  margin: 0.7rem 0.4rem;
+  padding: 0.75rem 0.5rem;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.todoRow:hover {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+  transform: translateY(-0.1rem);
+}
+
+.todoName {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  overflow-wrap: anywhere;
+}
+
+.todoDate {
+  font-size: clamp(0.85rem, 1.8vw, 1rem);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+.todoRow:has(.completed) {
+  opacity: 0.75;
+}
+
+.todoCheck {
+  width: 1.1rem;
+  height: 1.1rem;
+  cursor: pointer;
+}
+
+.todoActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todoActionBtn {
+  min-width: 2.75rem;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todoActionBtn:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.todoActionBtn svg {
+  font-size: 1.1rem;
+}
+
+.editInput {
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.4rem 0.6rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+
+.editInput:focus {
+  outline: none;
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.15);
+}
+
+
+@media (max-width: 575.98px) {
+  .todoActions {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 0.75rem;
+  }
+}

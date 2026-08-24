@@ -1,0 +1,17 @@
+.welcomeMessage {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem 1rem;
+  border: 1px dashed #ced4da;
+  border-radius: 0.5rem;
+}
+
+.welcomeMessage h2 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  margin-bottom: 0.5rem;
+}
+
+.welcomeMessage p {
+  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}

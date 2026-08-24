@@ -1,0 +1,6 @@
+.todoHeading {
+  margin: 0 0 2rem;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+}
