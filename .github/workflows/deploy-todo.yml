@@ -1,4 +1,4 @@
-name: Deploy Todo App
+name: Deploy React Projects
 
 on:
   push:
@@ -24,15 +24,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-          cache-dependency-path: Todo-App/package-lock.json
 
-      - name: Install dependencies
+      # Todo App
+      - name: Install Todo App dependencies
         working-directory: Todo-App
         run: npm ci
 
       - name: Build Todo App
         working-directory: Todo-App
+        run: npm run build
+
+      # Calculator
+      - name: Install Calculator dependencies
+        working-directory: Calculator
+        run: npm ci
+
+      - name: Build Calculator
+        working-directory: Calculator
         run: npm run build
 
       - name: Setup Pages
@@ -41,13 +49,16 @@ jobs:
       - name: Prepare Pages artifact
         run: |
           mkdir -p pages/Todo-App
+          mkdir -p pages/Calculator
+
           cp -r Todo-App/dist/* pages/Todo-App/
-      
+          cp -r Calculator/dist/* pages/Calculator/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: pages
-          
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
