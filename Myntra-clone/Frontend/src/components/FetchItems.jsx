@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { itemsActions } from "../store/itemsSlice";
 import { fetchStatusActions } from "../store/fetchingStatusSlice";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const FetchItems = () => {
   const fetchDone = useSelector((store) => store.fetchStatus.fetchDone);
   const dispatch = useDispatch();
@@ -16,7 +18,7 @@ const FetchItems = () => {
       dispatch(fetchStatusActions.markFetchingStarted());
 
       try {
-        const response = await fetch("http://localhost:8080/items", {
+        const response = await fetch(`${API_URL}/items`, {
           signal: controller.signal,
         });
 
