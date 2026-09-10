@@ -4,7 +4,7 @@ A responsive e-commerce frontend built with React and Redux Toolkit, inspired by
 
 ## 🚀 Live Demo
 
-Coming soon
+[View Live Demo](https://myntra-frontend-sangeet1.vercel.app/)
 
 ## 📌 Overview
 
@@ -122,39 +122,51 @@ On smaller screens:
 
 ## 📂 Project Structure
 
-    `Myntra-Clone/
+    Myntra-clone/
     │
-    ├── public/
+    ├── Backend/
+    │   ├── data/
+    │   │   └── items.js
+    │   ├── app.js
+    │   ├── items.json
+    │   ├── package.json
+    │   ├── package-lock.json
+    │   └── .gitignore
     │
-    ├── src/
-    │   ├── components/
-    │   │   ├── BagItem.jsx
-    │   │   ├── BagSummary.jsx
-    │   │   ├── FetchItems.jsx
-    │   │   ├── Footer.jsx
-    │   │   ├── Header.jsx
-    │   │   ├── HomeItem.jsx
-    │   │   └── LoadingSpinner.jsx
+    ├── Frontend/
+    │   ├── public/
+    │   │   ├── images/
+    │   │   ├── favicon.svg
+    │   │   └── icons.svg
     │   │
-    │   ├── routes/
-    │   │   ├── App.jsx
-    │   │   ├── Home.jsx
-    │   │   └── Bag.jsx
+    │   ├── src/
+    │   │   ├── components/
+    │   │   │   ├── BagItem.jsx
+    │   │   │   ├── BagSummary.jsx
+    │   │   │   ├── FetchItems.jsx
+    │   │   │   ├── Footer.jsx
+    │   │   │   ├── Header.jsx
+    │   │   │   ├── HomeItem.jsx
+    │   │   │   └── LoadingSpinner.jsx
+    │   │   │
+    │   │   ├── routes/
+    │   │   │   ├── App.jsx
+    │   │   │   ├── Home.jsx
+    │   │   │   └── Bag.jsx
+    │   │   │
+    │   │   ├── store/
+    │   │   │   ├── bagSlice.js
+    │   │   │   ├── fetchingStatusSlice.js
+    │   │   │   ├── itemsSlice.js
+    │   │   │   └── index.js
+    │   │   │
+    │   │   ├── index.css
+    │   │   └── main.jsx
     │   │
-    │   ├── store/
-    │   │   ├── bagSlice.js
-    │   │   ├── fetchingStatusSlice.js
-    │   │   ├── itemsSlice.js
-    │   │   └── index.js
-    │   │
-    │   ├── index.css
-    │   └── main.jsx
+    │   ├── .gitignore
+    │   ├── eslint.config.js
+    │   ├── package.json
+    │   ├── package-lock.json
+    │   └── vite.config.js
     │
-    ├── .gitignore
-    ├── eslint.config.js
-    ├── index.html
-    ├── package.json
-    ├── package-lock.json
-    ├── vite.config.js
     └── README.md
-    `
