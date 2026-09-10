@@ -1,6 +1,6 @@
 # React Projects
 
-A collection of React projects built while learning and practicing React, JavaScript, responsive web design, and modern frontend development.
+A collection of React projects built while learning and practicing React, JavaScript, responsive web design, state management, API integration, and modern frontend development.
 
 **Built by Sangeet**
 
@@ -8,23 +8,30 @@ A collection of React projects built while learning and practicing React, JavaSc
 
 ## 🚀 Projects
 
-### 🧮 Calculator
+### 🛍️ Myntra Clone
 
-A responsive calculator built with React for performing basic arithmetic operations.
+A responsive Myntra-inspired e-commerce application built with React and Redux Toolkit.
 
-**Features:**
-- Basic arithmetic operations
-- Responsive calculator layout
-- Responsive display and buttons
-- Mobile-friendly design
-- CSS Modules
-- Responsive typography using `clamp()`
+Features:
 
-🔗 **Live Demo:**  
-https://sangeet-30.github.io/React_Projects/Calculator/
+- Product listing
+- Product data fetched from a backend REST API
+- Add to Bag and Remove from Bag
+- Bag item count
+- Shopping Bag page
+- Order summary
+- Loading and error states
+- React Router navigation
+- Redux Toolkit state management
+- Responsive desktop and mobile layout
+- Separate frontend and backend
+- Vercel deployment
 
-📂 **Project:**  
-[Calculator](./Calculator/)
+🔗 Live Demo:
+https://myntra-frontend-sangeet1.vercel.app/
+
+📂 Project:
+Myntra-clone
 
 ---
 
@@ -32,7 +39,8 @@ https://sangeet-30.github.io/React_Projects/Calculator/
 
 A responsive Todo application built with React for managing daily tasks.
 
-**Features:**
+Features:
+
 - Add todos with due dates
 - Edit todos
 - Delete todos
@@ -45,11 +53,32 @@ A responsive Todo application built with React for managing daily tasks.
 - Responsive action buttons
 - GitHub Pages deployment
 
-🔗 **Live Demo:**  
+🔗 Live Demo:
 https://sangeet-30.github.io/React_Projects/Todo-App/
 
-📂 **Project:**  
-[Todo-App](./Todo-App/)
+📂 Project:
+Todo-App
+
+---
+
+### 🧮 Calculator
+
+A responsive calculator built with React for performing basic arithmetic operations.
+
+Features:
+
+- Basic arithmetic operations
+- Responsive calculator layout
+- Responsive display and buttons
+- Mobile-friendly design
+- CSS Modules
+- Responsive typography using `clamp()`
+
+🔗 Live Demo:
+https://sangeet-30.github.io/React_Projects/Calculator/
+
+📂 Project:
+Calculator
 
 ---
 
@@ -63,10 +92,16 @@ https://sangeet-30.github.io/React_Projects/Todo-App/
 - Bootstrap
 - CSS Modules
 - React Icons
+- Redux Toolkit
+- React Redux
+- React Router
+- Express.js
+- REST API
 - Git
 - GitHub
 - GitHub Actions
 - GitHub Pages
+- Vercel
 
 ---
 
@@ -80,11 +115,20 @@ https://sangeet-30.github.io/React_Projects/Todo-App/
 - `useContext`
 - Context API
 - `useReducer`
+- Redux Store
+- Redux Slices
+- Redux Toolkit
+- `useSelector`
+- `useDispatch`
+- React Router
 - Event Handling
 - Conditional Rendering
 - List Rendering
 - Array Methods
 - Form and Input Handling
+- API Integration
+- Async Data Fetching
+- Loading and Error Handling
 - Component-based Architecture
 - CSS Modules
 - Responsive Design
@@ -105,6 +149,7 @@ Responsive techniques include:
 
 - Bootstrap responsive grid
 - CSS Flexbox
+- CSS Grid
 - `rem`
 - `clamp()`
 - Media queries where required
@@ -113,28 +158,39 @@ Responsive techniques include:
 
 ## 🌐 Deployment
 
-The projects are deployed using **GitHub Pages** with **GitHub Actions**.
+The projects are deployed using GitHub Pages and Vercel.
 
-### Calculator
+### Myntra Clone
 
-https://sangeet-30.github.io/React_Projects/Calculator/
+🔗 Live Demo:
+https://myntra-frontend-sangeet1.vercel.app/
 
 ### Todo-App
 
+🔗 Live Demo:
 https://sangeet-30.github.io/React_Projects/Todo-App/
+
+### Calculator
+
+🔗 Live Demo:
+https://sangeet-30.github.io/React_Projects/Calculator/
 
 ---
 
 ## 📂 Repository Structure
 
-```text
-React_Projects/
-│
-├── Calculator/
-│
-├── Todo-App/
-│
-├── .github/
-│   └── workflows/
-│
-└── README.md
+    React_Projects/
+    │
+    ├── Myntra-clone/
+    │   ├── Backend/
+    │   ├── Frontend/
+    │   └── README.md
+    │
+    ├── Todo-App/
+    │
+    ├── Calculator/
+    │
+    ├── .github/
+    │   └── workflows/
+    │
+    └── README.md
